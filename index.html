@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +6,11 @@
     <title>K. Nithya Shree - Resume</title>
     <style>
         :root {
-            --primary-color: #4a154b;
-            --secondary-color: #611f69;
+            /* Main words are in blue */
+            --primary-blue: #0033cc; 
+            --secondary-blue: #00509e;
+            /* Outline in light colour */
+            --light-outline: #add8e6; 
             --text-color: #333333;
             --bg-color: #f8f9fa;
             --card-bg: #ffffff;
@@ -47,16 +49,20 @@
             margin-bottom: 30px;
         }
 
+        /* Name in bold and CAPS, blue with light outline */
         .header-text h1 {
-            color: var(--primary-color);
-            font-size: 2.5rem;
+            color: var(--primary-blue);
+            font-size: 2.8rem;
             margin-bottom: 5px;
+            text-transform: uppercase;
+            font-weight: 900;
+            -webkit-text-stroke: 1.5px var(--light-outline);
         }
 
         .header-text h2 {
-            color: var(--secondary-color);
+            color: var(--secondary-blue);
             font-size: 1.2rem;
-            font-weight: 400;
+            font-weight: 500;
             margin-bottom: 15px;
         }
 
@@ -70,7 +76,7 @@
             height: 130px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid var(--primary-color);
+            border: 3px solid var(--primary-blue);
         }
 
         /* Layout Sections */
@@ -78,19 +84,22 @@
             margin-bottom: 30px;
         }
 
+        /* Main words (Headers) in blue with light outline */
         h3 {
-            color: var(--primary-color);
+            color: var(--primary-blue);
             text-transform: uppercase;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
+            font-weight: 800;
             letter-spacing: 1px;
             margin-bottom: 15px;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 2px solid #e0e0e0;
             padding-bottom: 5px;
+            -webkit-text-stroke: 1px var(--light-outline);
         }
 
         p, ul {
             font-size: 1rem;
-            color: #555;
+            color: #444;
         }
 
         ul {
@@ -102,7 +111,12 @@
             margin-bottom: 8px;
         }
 
-        /* Education Timeline/Table Grid */
+        /* Fonts on slanted words */
+        .slanted {
+            font-style: italic;
+        }
+
+        /* Education Timeline Grid */
         .edu-item {
             display: grid;
             grid-template-columns: 150px 1fr;
@@ -111,7 +125,7 @@
 
         .edu-year {
             font-weight: bold;
-            color: var(--secondary-color);
+            color: var(--secondary-blue);
         }
 
         .edu-details h4 {
@@ -142,7 +156,7 @@
     <header>
         <div class="header-text">
             <h1>K. Nithya Shree</h1>
-            <h2>B.Tech AI & DS Student | Python Programmer</h2>
+            <h2 class="slanted">B.Tech AI & DS Student | Python Programmer</h2>
             <div class="contact-info">
                 <p><strong>📍 Address:</strong> 99/17 Thoppaswamy kovil 3rd street, Saidapet, Vellore - 12</p>
                 <p><strong>📞 Phone:</strong> +91 6369940483</p>
@@ -154,7 +168,7 @@
 
     <section>
         <h3>Objective</h3>
-        <p>Motivated and detail-oriented Python programmer with strong knowledge of Python programming, problem-solving, and software development concepts. Seeking an opportunity to apply my technical skills, learn new technologies, and contribute to organizational growth while building a successful career in software development.</p>
+        <p class="slanted">Motivated and detail-oriented Python programmer with strong knowledge of Python programming, problem-solving, and software development concepts. Seeking an opportunity to apply my technical skills, learn new technologies, and contribute to organizational growth while building a successful career in software development.</p>
     </section>
 
     <section>
@@ -164,7 +178,7 @@
             <div class="edu-year">2025 - 2029</div>
             <div class="edu-details">
                 <h4>Annai Mira College of Engineering and Technology</h4>
-                <p>B.Tech Artificial Intelligence & Data Science | CGPA/Score: 7.82</p>
+                <p class="slanted">B.Tech Artificial Intelligence & Data Science | CGPA/Score: 7.82</p>
             </div>
         </div>
 
@@ -172,7 +186,7 @@
             <div class="edu-year">2024 - 2025</div>
             <div class="edu-details">
                 <h4>Thottapalayam Girls Higher Secondary School</h4>
-                <p>HSC | Marks: 458</p>
+                <p class="slanted">HSC | Marks: 458</p>
             </div>
         </div>
 
@@ -180,7 +194,7 @@
             <div class="edu-year">2022 - 2023</div>
             <div class="edu-details">
                 <h4>Thottapalayam Girls Higher Secondary School</h4>
-                <p>SSLC | Marks: 374</p>
+                <p class="slanted">SSLC | Marks: 374</p>
             </div>
         </div>
     </section>
@@ -188,22 +202,22 @@
     <section>
         <h3>Skills & Certifications</h3>
         <ul>
-            <li>Python Programming</li>
-            <li>Junior Grade Typewriting Certificate</li>
+            <li class="slanted">Python Programming</li>
+            <li class="slanted">Junior Grade Typewriting Certificate</li>
         </ul>
     </section>
 
     <section>
         <h3>Interests</h3>
         <ul>
-            <li>Web Development</li>
-            <li>Software Development</li>
+            <li class="slanted">Web Development</li>
+            <li class="slanted">Software Development</li>
         </ul>
     </section>
 
     <section>
         <h3>Languages</h3>
-        <p>Tamil and English</p>
+        <p class="slanted">Tamil and English</p>
     </section>
 </div>
 
